@@ -1,100 +1,112 @@
-:root{
-    --dark:#0e1d2b;
-    --text-color:#e4f0fb;
+:root {
+    --dark: #0e1d2b;
+    --text-color: #e4f0fb;
 }
-body{
+
+body {
     background-color: var(--dark);
     overflow: hidden;
     overflow-y: scroll;
 }
-.opensans-sm{
+
+.opensans-sm {
     font-family: opensans;
     font-size: 14px;
     font-weight: 600;
 }
-.opensans{
+
+.opensans {
     font-family: opensans;
     font-size: 16px;
     font-weight: 600;
 }
-.opensans-lg{
+
+.opensans-lg {
     font-family: opensans;
     font-size: 20px;
     font-weight: 700;
 }
 
-.m-3{
+.m-3 {
     margin: 3em;
 }
-.mt-1{
+
+.mt-1 {
     margin-top: 1em;
 }
-.p-1{
+
+.p-1 {
     padding: 1em;
 }
 
-#header-title{
+#header-title {
     color: var(--text-color);
     letter-spacing: 5px;
     text-decoration-line: underline;
 }
 
-.input-box{
+.input-box {
     height: 50px;
     width: 50%;
     border-radius: 7px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
-.input-box:read-only{
+
+.input-box:read-only {
     background-color: #b4b4b4;
 }
 
-.input-box:focus-visible{
+.input-box:focus-visible {
     outline: none
 }
 
-.parent-todo-list{
+.parent-todo-list {
     margin-left: 2px;
 }
 
-#input-add-button{
+#input-add-button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color: #32ae85;
-    color:var(--text-color);
-}
-.trash-button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #32ae85;
-    color:var(--text-color);
-}
-.save-button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #32ae85;
-    color:var(--text-color); 
-}
-.edit-button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #32ae85;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
-#input-add-button:hover, .edit-button:hover, .trash-button:hover{
+.trash-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #32ae85;
+    color: var(--text-color);
+}
+
+.save-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #32ae85;
+    color: var(--text-color);
+}
+
+.edit-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #32ae85;
+    color: var(--text-color);
+}
+
+#input-add-button:hover,
+.edit-button:hover,
+.trash-button:hover {
     background-color: #144e3b;
 }
 
 
 
 @media screen and (max-width: 600px) {
-    .input-box{
+    .input-box {
         width: 65%;
     }
 
-  }
+}
